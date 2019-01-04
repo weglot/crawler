@@ -137,6 +137,13 @@ class Url
         return $this->path;
     }
 
+    public function removeQuery()
+    {
+        $this->query = null;
+
+        return $this;
+    }
+
     /**
      * @deprecated This function is not being used internally anymore and will be removed in the next major version.
      *
